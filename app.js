@@ -5,13 +5,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const requiredEnv = ["JWT_SECRET"];
-requiredEnv.forEach((key) => {
-  if (!process.env[key]) {
-    console.error(`❌ Missing ENV: ${key}`);
-  }
-});
-
 app.use("/api/auth", require("./routes/auth.routers"));
 app.use("/api/clientes", require("./routes/clientes.routes"));
 app.use("/api/creditos", require("./routes/creditos.routes"));
