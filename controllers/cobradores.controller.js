@@ -1,5 +1,5 @@
 // controllers/cobradores.controller.js
-const { db, admin } = require("../config/firebase");
+const db = require("../config/firebase");
 
 // CREATE - Agregar cobrador a una sede
 exports.createCobrador = async (req, res) => {

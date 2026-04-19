@@ -1,4 +1,4 @@
-const { db, admin } = require("../config/firebase");
+const db = require("../config/firebase");
 
 // CREATE - Agregar cliente a una sede
 exports.createCliente = async (req, res) => {

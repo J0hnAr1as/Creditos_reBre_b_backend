@@ -1,4 +1,4 @@
-const db = require("../config/firebase.config");
+const db = require("../config/firebase");
 
 // Crear usuario
 exports.createUsuario = async (req, res) => {

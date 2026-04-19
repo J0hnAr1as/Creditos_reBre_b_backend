@@ -1,5 +1,5 @@
 // controllers/creditos.controller.js
-const { db, admin } = require("../config/firebase");
+const db = require("../config/firebase");
 
 // Función para calcular intereses
 function calcularInteres(monto) {

@@ -1,5 +1,5 @@
 // controllers/pagos.controller.js
-const { db, admin } = require("../config/firebase");
+const db = require("../config/firebase");
 
 // CREATE - Registrar un pago en un crédito (solo superadmin)
 exports.createPago = async (req, res) => {

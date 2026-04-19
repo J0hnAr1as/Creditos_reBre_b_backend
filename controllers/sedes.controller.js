@@ -1,5 +1,5 @@
 // controllers/sedes.controller.js
-const { db, admin } = require("../config/firebase");
+const db = require("../config/firebase");
 
 // CREATE - Crear sede en todas las colecciones
 exports.createSede = async (req, res) => {
