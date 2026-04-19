@@ -1,4 +1,3 @@
-// controllers/clientes.controller.js
 const { db, admin } = require("../config/firebase");
 
 // CREATE - Agregar cliente a una sede
