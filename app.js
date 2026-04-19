@@ -21,17 +21,6 @@ app.get("/", (req, res) => {
   });
 });
 
-// Middleware para rutas no encontradas
-app.use((req, res) => {
-  res.status(404).json({ error: "Ruta no encontrada" });
-});
-
-// Middleware de manejo global de errores
-app.use((err, req, res, next) => {
-  console.error("ERROR GLOBAL:", err);
-  res.status(500).json({ error: "Error interno del servidor" });
-});
-
 module.exports = app;
 
 
