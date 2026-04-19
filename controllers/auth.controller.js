@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const db = require("../config/firebase.config");
+const db = require("../config/firebase");
 
 const JWT_SECRET = process.env.JWT_SECRET || "cambiar_esta_clave";
 
